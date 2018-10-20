@@ -3,20 +3,21 @@
 
 <h2>Utilisation en local</h2>
 
+```shell
+git clone https://github.com/NicolasHov/Eventbrite-like-of-the-world.git
 
-> <p>git clone https://github.com/Nicolas_Hov/eventbrite-like-of-the-world.git
+cd Eventbrite-like-of-the-world
 
-> cd eventbrite-like
+bundle install 
 
-> bundle install 
+rails db:create
 
-> rails db:create
+rails db:migrate
 
-> rails db:migrate
+rails db:seed
 
-> rails db:seed
-
-> rails server  
+rails server  
+```
 
 Go sur http://localhost:3000/
 
