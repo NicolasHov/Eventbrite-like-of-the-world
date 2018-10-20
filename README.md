@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+<h2>Utilisation en local</h2>
 
-* Ruby version
 
-* System dependencies
+> <p>git clone https://github.com/Nicolas_Hov/eventbrite-like-of-the-world.git
 
-* Configuration
+> cd eventbrite-like
 
-* Database creation
+> bundle install 
 
-* Database initialization
+> rails db:create
 
-* How to run the test suite
+> rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+> rails db:seed
 
-* Deployment instructions
+> rails server  
 
-* ...
+Go sur http://localhost:3000/
+
