@@ -1,0 +1,12 @@
+<h1>Events</h1>
+<br>
+<% @events.each do |event| %>
+    <h2> <%= event.name %> </h2>
+    <h3> <%= event.description %> </h3>
+    <p> <%= event.place %> </p>
+    <button class="favorite styled" type="button"> Show </button>
+    <br>
+<% end %>
+
+<br> <br> 
+<button class="favorite styled" type="button"> Accueil </button>
