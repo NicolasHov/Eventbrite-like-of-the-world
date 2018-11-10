@@ -28,8 +28,8 @@ class CategoriesController < ApplicationController
 
   #ajouter le if else
   def create
-    @category= Category.create(post_params)
-    redirect_to edit_category_path(category.id)
+    category= Category.create(post_params)
+    redirect_to category_path(category.id)
   end
 
   def destroy
@@ -41,7 +41,7 @@ class CategoriesController < ApplicationController
   private 
 
   def post_params
-    params.require(:category.permit(:name, :description, :place))
+    params.require(:category).permit(:title, :slug)
   end
 
 end

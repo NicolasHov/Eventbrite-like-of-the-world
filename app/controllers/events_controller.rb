@@ -29,7 +29,7 @@ class EventsController < ApplicationController
   #ajouter le if else
   def create
     event = Event.create(post_params)
-    redirect_to edit_event_path(event.id)
+    redirect_to event_path(event.id)
   end
 
   def destroy
