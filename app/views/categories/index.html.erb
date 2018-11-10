@@ -1,14 +1,10 @@
 <center><h1>Categories</h1></center>
 <br>
-
 <%= link_to 'Create a category', new_category_path%>
-<br>
-<br>
- 
+<br><br>
 <% @categories.each do |category| %>
    ######################### 
-    <br>
-    <br>
+    <br><br>
     <h2> <%= category.title %> </h2>
     <h3> <%= category.slug %> </h3>
     <%= link_to 'Show', category_path(category.id) %>
