@@ -12,6 +12,9 @@
     <%= link_to 'Add Event', new_event_path(event.id) %>
     <%= link_to 'Show', event_path(event.id) %>
     <%= link_to 'Edit', edit_event_path(event.id) %>
+    <%= link_to 'Delete', edit_event_path(event.id),
+            method: :delete, data: { confirm: "Êtes vous sûr?" } %>
+
     <br>
 <% end %>
 
