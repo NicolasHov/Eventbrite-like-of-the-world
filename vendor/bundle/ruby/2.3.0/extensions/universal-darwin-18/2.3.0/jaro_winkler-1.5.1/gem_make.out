@@ -1,0 +1,18 @@
+current directory: /Users/nicolas_hovart/Documents/Workspace/eventbrite-like/vendor/bundle/ruby/2.3.0/gems/jaro_winkler-1.5.1/ext/jaro_winkler
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20181110-17218-2ph9yf.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nicolas_hovart/Documents/Workspace/eventbrite-like/vendor/bundle/ruby/2.3.0/gems/jaro_winkler-1.5.1/ext/jaro_winkler
+make "DESTDIR=" clean
+
+current directory: /Users/nicolas_hovart/Documents/Workspace/eventbrite-like/vendor/bundle/ruby/2.3.0/gems/jaro_winkler-1.5.1/ext/jaro_winkler
+make "DESTDIR="
+compiling adj_matrix.c
+compiling codepoints.c
+compiling jaro.c
+compiling jaro_winkler.c
+linking shared-object jaro_winkler/jaro_winkler_ext.bundle
+
+current directory: /Users/nicolas_hovart/Documents/Workspace/eventbrite-like/vendor/bundle/ruby/2.3.0/gems/jaro_winkler-1.5.1/ext/jaro_winkler
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 jaro_winkler_ext.bundle ./.gem.20181110-17218-5h07g4/jaro_winkler
