@@ -1,0 +1,14 @@
+<h1>Edit you Event</h1>
+    <%# <h3> <%= @event.description %> </h3> %>
+    <%# <p> <%= @event.place %> </p> %>
+
+<%= form_for @event do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :description, size: "60x12" %>
+  <%= f.text_field :place %>
+
+  <%= f.submit "Edit" %>
+<% end %>
+    <br>
+
+<%= link_to 'Events', events_path %>
