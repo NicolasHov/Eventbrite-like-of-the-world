@@ -21,11 +21,12 @@ class EventsController < ApplicationController
       render "edit"
     end
   end
-  
+
   def edit
     @event = Event.find(params[:id])
   end
 
+  #ajouter le if else
   def create
     event = Event.create(post_params)
     redirect_to edit_event_path(event.id)
@@ -34,7 +35,7 @@ class EventsController < ApplicationController
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
-    redirect_to event_path
+    redirect_to events_path
   end
 
   private 
