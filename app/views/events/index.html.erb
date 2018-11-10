@@ -1,21 +1,24 @@
-<h1>Events</h1>
+<center><h1>Events</h1></center>
 <br>
 
 <%= link_to 'Create an event', new_event_path%>
 <br>
 <br>
-
+ 
 <% @events.each do |event| %>
+   ######################### 
+    <br>
+    <br>
     <h2> <%= event.name %> </h2>
     <h3> <%= event.description %> </h3>
     <p> <%= event.place %> </p>
-    <%= link_to 'Add Event', new_event_path(event.id) %>
     <%= link_to 'Show', event_path(event.id) %>
     <%= link_to 'Edit', edit_event_path(event.id) %>
     <%= link_to 'Delete', event_path(event.id),
             method: :delete, data: { confirm: "Êtes vous sûr?" } %>
-
     <br>
+    <br>
+ 
 <% end %>
 
 <br><br>

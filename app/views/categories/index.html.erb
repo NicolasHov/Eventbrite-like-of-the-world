@@ -1,0 +1,23 @@
+<center><h1>Categories</h1></center>
+<br>
+
+<%= link_to 'Create a category', new_category_path%>
+<br>
+<br>
+ 
+<% @categories.each do |category| %>
+   ######################### 
+    <br>
+    <br>
+    <h2> <%= category.title %> </h2>
+    <h3> <%= category.slug %> </h3>
+    <%= link_to 'Show', category_path(category.id) %>
+    <%= link_to 'Edit', edit_category_path(category.id) %>
+    <%= link_to 'Delete', category_path(category.id),
+            method: :delete, data: { confirm: "Êtes vous sûr?" } %>
+    <br>
+    <br>
+ 
+<% end %>
+
+<br><br>
