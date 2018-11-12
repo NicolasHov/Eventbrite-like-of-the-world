@@ -12,6 +12,7 @@
     <h2> <%= event.name %> </h2>
     <h3> <%= event.description %> </h3>
     <p> <%= event.place %> </p>
+    <p> <%= event.category_id %> </p>
     <%= link_to 'Show', event_path(event.id) %>
     <%= link_to 'Edit', edit_event_path(event.id) %>
     <%= link_to 'Delete', event_path(event.id),
