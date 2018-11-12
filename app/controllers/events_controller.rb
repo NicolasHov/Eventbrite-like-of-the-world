@@ -1,12 +1,12 @@
 class EventsController < ApplicationController
 
+  before_action :set_post, only: [:show, :update, :edit, :destroy]
 
   def index
     @events = Event.all 
   end
 
   def show
-    @event = Event.find(params[:id])
   end
 
   def new
@@ -14,7 +14,6 @@ class EventsController < ApplicationController
   end
 
   def update
-    @event = Event.find(params[:id])
     if @event.update(post_params)
       redirect_to event_path(@event.id)
     else 
@@ -23,7 +22,6 @@ class EventsController < ApplicationController
   end
 
   def edit
-    @event = Event.find(params[:id])
   end
 
   #ajouter le if else
@@ -33,7 +31,6 @@ class EventsController < ApplicationController
   end
 
   def destroy
-    @event = Event.find(params[:id])
     @event.destroy
     redirect_to events_path
   end
@@ -44,4 +41,7 @@ class EventsController < ApplicationController
     params.require(:event).permit(:name, :description, :place)
   end
 
+  def set_post 
+    @event = Event.find(params[:id])
+  end
 end
