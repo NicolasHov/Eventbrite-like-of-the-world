@@ -14,4 +14,7 @@ d= Event.create(name:"Test", description:"bakbalaboa", place:"Labas cest pas loi
 e = Category.create(title:"Fun", slug:"dsqdsqds")
 f = Category.create(title:"Serious", slug:"dsqdsqdqsdaa")
 
-bordel = Event.create(name:"Bordel", description:"on fout la merde freree", place:"Labas cest pas loin frere", category_id:13)
+bordel = Event.create(name:"Bordel", description:"on fout la merde freree", place:"Labas cest pas loin frere", category_id:1)
+
+a = Event.create(name:"Wahou", description:"fdsfdsfdsfs", place:"rue de la noix", category_id:2)
+
